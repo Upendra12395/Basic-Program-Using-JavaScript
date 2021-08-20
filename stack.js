@@ -29,9 +29,12 @@ function add(element) {
     }
  
     // empty the stack
-    function clear(){
-        array = [];
-    }
+function clear(){
+        while(!isEmpty()){
+            array.pop()
+        }
+       
+}
 
 
 
