@@ -1,7 +1,8 @@
 const { spawn} = require('child_process')
 
-const child = spawn('ls', ['-lh'])
-
+//const child = spawn('ls', ['-lh'])
+//const child = spawn('find', ['/'])
+const child = spawn('pwd')
 child.stdout.on('data', (data)=>{
     console.log(`data : ${data}`)
 })
