@@ -15,7 +15,7 @@ const { stderr } = require('process')
 
 exec('ls -lh', (error, stdout, stderr)=>{
     if (error){
-        console.log(`error : ${error}`)
+        console.log(`error : ${error.message}`)
         return
     }
     if (stderr){
